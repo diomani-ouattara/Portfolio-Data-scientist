@@ -2,7 +2,7 @@
 
 ### Certified Data Scientist | MIT | Edmonton, AB 🇨🇦
 
-I'm a data scientist with a decade of experience blending **machine learning**, **predictive modeling**, and **operational analytics** with a background in IT management and international logistics. I turn complex datasets into decisions that actually move the needle.
+I'm a data scientist with experience blending **machine learning**, **predictive modeling**, and **operational analytics** with a background in IT management and international logistics. I turn complex datasets into decisions that actually move the needle.
 
 ---
 
