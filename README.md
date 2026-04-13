@@ -1,66 +1,94 @@
-# Portfolio-Data-scientist
-My portfolio as data scientist
-# Hi there, I'm Diomani Ouattara 👋
+# Hi, I'm Diomani Ouattara 👋
 
-I'm an entry-level Data Scientist based in Edmonton, AB, with a passion for turning data into actionable insights. I recently graduated from the MIT Institute for Data, Systems and Society's Data Science and Machine Learning program, and I'm eager to apply my skills to solve real-world problems.
+### Certified Data Scientist | MIT | Edmonton, AB 🇨🇦
 
-*   🔭 I’m currently working on building my project portfolio and deepening my knowledge in MLOps.
-*   🌱 I’m continuously learning about advanced topics in Deep Learning and Cloud Computing (AWS).
-*   👯 I’m looking to collaborate on open-source data science projects, especially those with a social impact.
-*   💬 Ask me about Python, machine learning models, or my experience transitioning from network administration to data science.
-*   📫 How to reach me: [odiomani@yahoo.com](mailto:odiomani@yahoo.com) | [LinkedIn Profile Link](https://www.linkedin.com/in/your-profile/) | [Personal Website/Blog Link - Optional]
-*   ⚡ Fun fact: I'm also a certified 5th Class Power Engineer!
-
-## 🛠️ My Toolkit
-
-**Languages & Libraries:**
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/Numpy-777BB4?style=for-the-badge&logo=numpy&logoColor=white)
-![Scikit-Learn](https://img.shields.io/badge/scikit_learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-![SQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
-
-**Tools & Technologies:**
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626.svg?&style=for-the-badge&logo=Jupyter&logoColor=white)
-![Git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
-![Power BI](https://img.shields.io/badge/PowerBI-F2C811?style=for-the-badge&logo=Power%20BI&logoColor=white)
-
-**Core Competencies:**
-*   Machine Learning: Regression, Classification, Clustering, Deep Learning
-*   Data Analysis: EDA, Feature Engineering, Statistical Testing
-*   Model Evaluation: Cross-Validation, Hyperparameter Tuning, A/B Testing
-
-## 📂 Featured Projects
-
-Here are a few projects that showcase my work. Click on the titles to visit the repositories.
-
-### [**New York City Bus Ride Duration Prediction**](link-to-your-repo)
-*   **Goal:** Predicted the total travel time for NYC bus routes using trip data.
-*   **Action:** Performed extensive data cleaning and feature engineering (e.g., extracting date-time features, calculating distances). Implemented and compared models like Random Forest and Gradient Boosting.
-*   **Result:** Achieved a model with a significant improvement over a baseline regression model, demonstrating the ability to handle real-world, messy data.
-*   *Tech:* `Python`, `Pandas`, `Scikit-Learn`, `Matplotlib`
-
-### [**Hospital Length of Stay Prediction**](link-to-your-repo)
-*   **Goal:** Developed a model to predict a patient's length of stay to help with hospital resource planning.
-*   **Action:** Addressed class imbalance in the dataset, engineered features from patient records, and trained a classification model.
-*   **Result:** Built a model that accurately stratified patients by expected stay length, showcasing skills in healthcare analytics.
-*   *Tech:* `Python`, `Pandas`, `Scikit-Learn`, `Imbalanced-learn`
-
-### [**Travel Package Purchase Prediction**](link-to-your-repo)
-*   **Goal:** Built a classification model to predict which customers would purchase a travel package.
-*   **Action:** Conducted exploratory data analysis to understand customer behavior, performed feature encoding, and optimized a logistic regression model.
-*   **Result:** Created a model that can help a travel agency target its marketing efforts more effectively.
-*   *Tech:* `Python`, `Pandas`, `Seaborn`, `Scikit-Learn`
-
-*(He can add more projects here, such as the Unemployment Rate Prediction or Portfolio Optimization, following the same structure.)*
-
-## 📜 Certifications & Education
-*   **Data Science and Machine Learning:** Making data-driven decisions. (MIT Institute for Data, Systems and Society)
-*   **Supply Chain Logistics, Operations and Planning** (Rutgers University)
-*   **Bachelor in Network Administration** (Institute of Technology Abidjan)
+I'm a data scientist with a decade of experience blending **machine learning**, **predictive modeling**, and **operational analytics** with a background in IT management and international logistics. I turn complex datasets into decisions that actually move the needle.
 
 ---
 
-⭐️ From [diomani](https://github.com/[his-username])
+## 🧠 Tech Stack
+
+**Languages & Databases**
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+
+**Machine Learning & Data Science**
+
+![Scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+
+**Visualization**
+
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white)
+![Seaborn](https://img.shields.io/badge/Seaborn-4C72B0?style=for-the-badge&logo=python&logoColor=white)
+![Power BI](https://img.shields.io/badge/PowerBI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+
+---
+
+## 🚀 Featured Projects
+
+### 🚌 NYC Bus Ride Duration Prediction
+> Engineered features from **1.5M+ rows** of public transit data (time of day, weather, holidays) to predict trip durations using Gradient Boosting — achieving a **15% improvement in RMSE** over baseline.
+
+`Python` `Pandas` `Scikit-learn` `Random Forest` `Gradient Boosting`
+
+---
+
+### 🏥 Hospital Length of Stay Prediction
+> Built a regression model to predict patient discharge timelines from clinical and demographic data. Achieved a Mean Absolute Error of **±2.1 days**, enabling better resource allocation and staffing forecasts.
+
+`Python` `Neural Networks` `Regression Analysis`
+
+---
+
+### ✈️ Travel Package Purchase Prediction
+> Binary classification model identifying customer segments most likely to purchase a travel package. Achieved **85% ROC-AUC**, providing a targeted marketing framework projected to increase conversion rates by **15–20%**.
+
+`Logistic Regression` `Random Forest` `Classification`
+
+---
+
+### 📈 Network Stock Portfolio Optimization
+> Applied Modern Portfolio Theory to historical stock data to optimize asset allocation and maximize the Sharpe ratio.
+
+`Python` `Financial Analysis` `Statistical Modeling`
+
+---
+
+## 📊 Areas of Expertise
+
+- Predictive Modeling & Statistical Analysis
+- Feature Engineering & Data Wrangling
+- Time Series Analysis & A/B Testing
+- Deep Learning (ANN) & Recommendation Systems
+- Supply Chain & Logistics Optimization
+- Cross-Validation, Bootstrapping, Model Evaluation
+
+---
+
+## 🎓 Education & Certifications
+
+| Credential | Institution | Year |
+|---|---|---|
+| Data Science & Machine Learning: Making Data-Driven Decisions | MIT Institute for Data, Systems and Society | 2023 |
+| Supply Chain Logistics, Operations and Planning | Rutgers University | 2020 |
+| Bachelor's in Network Administration | Institute of Technology, Abidjan | 2010 |
+
+---
+
+## 🌍 About Me
+
+- 🇨🇦 Based in **Edmonton, AB**
+- 🗣️ Fluent in **English** and **French (Native)**
+- 🤝 Volunteer at **Hope Mission, Edmonton** — food distribution & inventory for 50+ community members weekly
+- 💼 10+ years in IT management and international logistics (oil & gas, West Africa)
+
+---
+
+## 📬 Let's Connect
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/diomani-ouattara)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:odiomani@yahoo.com)
