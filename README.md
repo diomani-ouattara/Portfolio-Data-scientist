@@ -137,75 +137,204 @@ A recruiting team sources candidates by typing a role keyword — *"aspiring hum
 
 ## 🚀 Other Projects
 
-### 🚌 NYC Bus Ride Duration Prediction
+### Applied Machine Learning
+
+#### 🚌 NYC Bus Ride Duration Prediction
 > Engineered features from **1.5M+ rows** of public transit data (time of day, weather, holidays) to predict trip durations using Gradient Boosting — achieving a **15% improvement in RMSE** over baseline.
 
 `Python` `Pandas` `Scikit-learn` `Random Forest` `Gradient Boosting`
 
-### 🏥 Hospital Length of Stay (LOS) Prediction
+#### 🏥 Hospital Length of Stay (LOS) Prediction
 > Built a regression model for HealthPlus hospital to predict patient discharge timelines from clinical and demographic data available at admission. Achieved a Mean Absolute Error of **±2.1 days**, enabling better allocation of beds, equipment, and staff — and surfaced the factors that drive long stays.
 
 `Python` `Neural Networks` `Regression Analysis`
 
-### ✈️ Travel Package Purchase Prediction
+#### ✈️ Travel Package Purchase Prediction
 > Binary classification model identifying customer segments most likely to purchase a travel package. Achieved **85% ROC-AUC**, providing a targeted marketing framework projected to increase conversion rates by **15–20%**.
 
 `Logistic Regression` `Random Forest` `Classification`
 
-### 👥 HR Employee Attrition Prediction
+#### 👥 HR Employee Attrition Prediction
 > Classification model predicting which employees are at risk of leaving, so retention incentives can be focused where they matter. Identified the key factors driving attrition, helping People Operations cut retention spending without losing top talent.
 
 `Python` `Classification` `Feature Importance`
 
-### 🎓 Skool — Lead Conversion Prediction
+#### 🎓 Skool — Lead Conversion Prediction
 > For an ed-tech startup, built an ML model to score which leads are most likely to convert to paid customers, identified the factors driving conversion, and profiled high-potential leads — enabling smarter allocation of the sales team's time.
 
 `Python` `Classification` `Customer Profiling`
 
-### ☕ AB Roasters — Coffee Quality Prediction
+#### ☕ AB Roasters — Coffee Quality Prediction
 > Regression model predicting roasted coffee quality (0–100) from **17 sensor variables** — chamber temperatures across five compartments, raw-material volume, and humidity — so the company can price its beans accurately.
 
 `Python` `Regression` `Sensor Data`
 
-### 🛒 BigMart & SuperKart — Retail Sales Forecasting
+#### 🛒 BigMart & SuperKart — Retail Sales Forecasting
 > Predictive models estimating product- and store-level sales across multi-outlet retail chains (1,559 products, 10 stores for BigMart; quarterly revenue forecasts for SuperKart) — driving inventory planning and revealing which product and store properties boost sales.
 
 `Python` `Regression` `Sales Forecasting`
 
-### 🚗 Cars4U — Used Car Price Prediction
+#### 🚗 Cars4U — Used Car Price Prediction
 > Pricing model for the Indian pre-owned car market, predicting used car prices to power a differential pricing strategy — with EDA, modeling, and business recommendations on the factors that most affect resale value.
 
 `Python` `Regression` `Pricing Strategy`
 
-### 📺 Effects of Advertising on Sales
+#### 📺 Effects of Advertising on Sales
 > Regression case study quantifying how TV, radio, and newspaper ad budgets each drive sales — and predicting sales from a given advertising mix.
 
 `Python` `Linear Regression` `Marketing Analytics`
 
-### 📈 Network Stock Portfolio Optimization
+#### 📈 Network Stock Portfolio Optimization
 > Applied Modern Portfolio Theory to historical stock data to optimize asset allocation and maximize the Sharpe ratio.
 
 `Python` `Financial Analysis` `Statistical Modeling`
 
 ---
 
+---
+
+### Computer Vision & Deep Learning
+> *MIT Professional Education coursework — course case studies, not client engagements.*
+
+#### 🧠 Brain Tumour MRI Classification
+> Binary classifier separating pituitary-tumour from no-tumour MRI scans across **1,000 images** (830 training / 170 test). Built a CNN baseline, applied **data augmentation** to control overfitting on a small medical dataset, then improved it further with **transfer learning** from a pre-trained architecture.
+
+`Python` `TensorFlow` `Keras` `CNN` `Transfer Learning` `Data Augmentation`
+
+#### 🌱 Plant Seedlings Classification
+> Species classifier across **12 plant species** at varying growth stages (Aarhus University / University of Southern Denmark dataset), aimed at cutting the manual sorting effort that still dominates crop monitoring.
+
+`Python` `TensorFlow` `Keras` `CNN` `Image Classification`
+
+#### 🍚 Rice Variety Classification
+> Five-class CNN separating Arborio, Basmati, Ipsala, Jasmine and Karacadag grains — the grading step that gates agricultural rice export.
+
+`Python` `Keras` `CNN` `Multi-class Classification`
+
+#### 🏠 SVHN Street View Digit Recognition
+> Transcribing house numbers from street-level photography (600k+ labelled digits; subset used). Built **twice on identical data** — first a feed-forward ANN, then a CNN — so the two architectures could be compared directly rather than asserted.
+
+`Python` `TensorFlow` `Keras` `ANN` `CNN`
+
+#### 🔊 Audio MNIST Spoken-Digit Recognition
+> Classifying spoken digits 0–9 by converting audio into **MFCC spectrograms** and treating sound as a 2-D image — sidestepping the storage and compute cost of raw waveform amplitudes.
+
+`Python` `librosa` `Keras` `ANN` `Spectrogram Processing`
+
+#### 🍞 Food Image Classification
+> Auto-labelling stock photography into Bread, Soup and Vegetables-Fruits for an image agency where daily upload volume makes manual tagging impossible.
+
+`Python` `Keras` `CNN` `Image Classification`
+
+#### ✍️ MNIST Handwritten Digit Classification
+> Baseline CNN on the classic 28×28 benchmark, evaluated and then improved — the standard proving ground for convolutional architectures.
+
+`Python` `Keras` `CNN`
+
+---
+
+### Recommendation Systems
+> *MIT Professional Education coursework.*
+
+#### 🛒 Amazon Product Recommendation System
+> Recommending products from customers' prior ratings at a scale where response has to be real-time — built around item-to-item collaborative filtering, the baseline approach Amazon itself uses.
+
+`Python` `Collaborative Filtering` `Matrix Factorization`
+
+#### 🍴 Yelp Restaurant Recommender
+> **Four** recommender types built and compared on the same review corpus (~11 GB in full; subset used): knowledge/rank-based, similarity-based collaborative filtering, matrix factorization, and clustering-based.
+
+`Python` `Collaborative Filtering` `Matrix Factorization` `Clustering`
+
+#### 🎵 Spotify Music Recommender
+> Proposing the top 10 next songs per listener by predicted likelihood of listening, from a preference database of millions of users and billions of plays.
+
+`Python` `Rank-Based Recommenders` `Collaborative Filtering`
+
+#### 📚 Book Recommendation System
+> Three recommender types for an e-commerce reading catalogue — rank-based, similarity-based collaborative filtering, and matrix factorization.
+
+`Python` `Collaborative Filtering` `Matrix Factorization`
+
+---
+
+### Unsupervised Learning & Dimensionality Reduction
+> *MIT Professional Education coursework.*
+
+#### 🧬 Genomic Data Clustering — verifying the genetic code
+> Given a **300 kb fragment of the *Caulobacter crescentus* genome** and no labels whatsoever, split the sequence into non-overlapping 300-base substrings, counted 1-, 2-, 3- and 4-mer frequencies, applied PCA to expose internal structure, then clustered. **The three-letter codon structure of DNA falls out of the clustering** — a twentieth-century discovery re-derived by unsupervised learning alone.
+
+`Python` `PCA` `K-Means` `Feature Extraction`
+
+#### 🌍 Country Socio-Economic Clustering
+> Grouping countries by development profile beyond GDP alone — across child mortality, exports, health spend, imports, income, inflation, life expectancy, fertility and GDP per capita — for government and NGO targeting.
+
+`Python` `K-Means` `Hierarchical Clustering` `Scikit-learn`
+
+#### 💳 AllLife Bank Credit-Card Segmentation
+> Segmenting a credit-card base by spending pattern **and** past support interaction, so Marketing could run personalized campaigns and Operations could fix a service model customers rated poorly.
+
+`Python` `Clustering` `Customer Segmentation`
+
+#### 🏫 US Education Institutes — PCA
+> Reducing a wide institutional dataset — applications, enrollment, faculty education, finances, graduation rate — to the handful of components that actually drive it.
+
+`Python` `PCA` `Dimensionality Reduction`
+
+#### 👤 Face Identification with Eigenfaces
+> Classifying faces in photographic images by projecting them into a low-dimensional face space.
+
+`Python` `PCA` `Eigenfaces` `Image Classification`
+
+#### 📝 LDA Topic Modeling on Faculty Text
+> Surfacing latent research themes across MIT EECS faculty pages — scraped, pre-processed, and modelled with Latent Dirichlet Allocation via stochastic variational inference.
+
+`Python` `Web Scraping` `NLP` `LDA` `Topic Modeling`
+
+---
+
+### Networks, Graphical Models & Neural Networks
+> *MIT Professional Education coursework.*
+
+#### 🕸️ CAVIAR Criminal Network Analysis
+> A Montreal drug-trafficking network across a two-year joint Montreal Police / RCMP investigation (**1994–1996**) — a rare chance to watch a network *restructure* under escalating seizures rather than sit still. Built and visualised the graph phase by phase, then tracked **centrality measures** to see how influence migrated between actors as the network came under pressure.
+
+`Python` `NetworkX` `Graph Theory` `Centrality Measures`
+
+#### 🎯 3-D Object Tracking with a Kalman Filter
+> Recovering the true position and velocity of a ball moving under gravity from noisy simulated sensor readings.
+
+`Python` `Kalman Filter` `State Estimation`
+
+#### 🎓 UCLA Admission Chance Prediction
+> Predicting a student's admission probability from their profile, to help applicants shortlist realistically.
+
+`Python` `Neural Networks` `Classification`
+
+#### 💼 Data Scientist Job-Change Prediction
+> Predicting which training-programme candidates will seek a new job rather than join the company — and interpreting *which* factors drive that decision, so training spend isn't wasted on candidates who will leave.
+
+`Python` `Classification` `Feature Importance`
+
 ## 📊 Areas of Expertise
 
 - Predictive Modeling & Statistical Analysis
 - Feature Engineering & Data Wrangling
 - Imbalanced Classification & Model Evaluation (ROC-AUC, Precision-Recall, Average Precision)
-- NLP & Information Retrieval — sentence embeddings, hybrid retrieval, relevance feedback, topic modeling
-- Deep Learning — ANNs, CNNs, transfer learning, data augmentation
-- Recommendation Systems — collaborative filtering, matrix factorization, content- and rank-based
-- Unsupervised Learning — PCA, t-SNE, K-Means, hierarchical clustering, Gaussian mixtures
-- Network & Graph Analysis — centrality measures
+- **Computer Vision** — image classification, CNNs, data augmentation, transfer learning
+- **Audio & Signal Processing** — MFCC spectrograms, treating sound as image data
+- **NLP & Information Retrieval** — sentence embeddings, hybrid retrieval, relevance feedback, LDA topic modeling, web scraping
+- **Recommendation Systems** — collaborative filtering, matrix factorization, content-, rank- and clustering-based
+- **Deep Learning** — ANNs, CNNs, transfer learning, TensorFlow & Keras
+- **Unsupervised Learning** — PCA, t-SNE, K-Means, hierarchical clustering, Gaussian mixtures, eigenfaces
+- **Graph & Network Analysis** — centrality measures, time-varying network structure
+- **State Estimation** — Kalman filtering for noisy sensor data
+- Classical ML — KNN, decision trees, bagging, random forest, SVM, ridge & lasso regularization
 - Ranking Evaluation — NDCG, MAP, Recall@K
 - Responsible AI — bias auditing, disparate impact analysis, counterfactual testing
 - Time Series Analysis & A/B Testing
 - Cross-Validation, Bootstrapping, Customer Segmentation
 - Supply Chain & Logistics Optimization
-
----
 
 ## 🎓 Education & Certifications
 
@@ -218,64 +347,9 @@ A recruiting team sources candidates by typing a role keyword — *"aspiring hum
 
 ### 📚 MIT Applied Coursework
 
-Case studies completed within the MIT Professional Education program (IDSS). These are **structured course assignments, not client engagements** — listed for the breadth of methods covered, not as commissioned work.
+The MIT Professional Education programme ran as **21 applied case studies** across four modules — unsupervised learning, recommendation systems, deep learning, and networks & graphical models. They are written up individually under [Other Projects](#-other-projects) above, each labelled as coursework rather than client work.
 
-<details>
-<summary><b>Unsupervised Learning</b> — PCA, clustering, topic modeling, eigenfaces</summary>
-
-| Case study | The problem | Methods |
-|---|---|---|
-| **Genomic data clustering** | Verify the twentieth-century discovery that DNA encodes information in **three-letter codons** — using a 300 kb fragment of the *Caulobacter crescentus* genome and no labels at all, so the structure has to be inferred rather than trained on | Split the sequence into non-overlapping 300-base substrings, count 1-, 2-, 3- and 4-mer frequencies, apply PCA to expose internal structure, then cluster. The codon triplet falls out of the clustering — a genuinely elegant result |
-| **Country socio-economic clustering** | Group countries by development profile beyond GDP alone, for government and NGO targeting | Clustering over child mortality, exports, health spend, imports, income, inflation, life expectancy, fertility rate and GDP per capita |
-| **US education institutes** | Reduce a wide institutional dataset — applications, enrollment, faculty education, finances, graduation rate — to its principal drivers | PCA, dimensionality reduction, insight extraction |
-| **AllLife Bank credit-card segmentation** | Find customer segments by spending pattern *and* past support interaction, to aim personalized campaigns and fix a service model customers rated poorly | Clustering on spending and interaction features |
-| **MIT EECS faculty text** | Surface latent research themes across faculty pages | Web scraping, text pre-processing, Latent Dirichlet Allocation via stochastic variational inference |
-| **Face identification** | Classify faces in photographic images | PCA / eigenfaces |
-
-</details>
-
-<details>
-<summary><b>Recommendation Systems</b> — collaborative filtering, matrix factorization, rank-based</summary>
-
-| Case study | The problem | Methods |
-|---|---|---|
-| **Spotify music recommender** | Propose the top 10 next songs for a user by likelihood of listening | Rank-based and collaborative filtering over listening history |
-| **Yelp restaurants** | Recommend local businesses from a multi-city review corpus (~11 GB in full; a subset used here) | Four systems built and compared: knowledge/rank-based, similarity-based collaborative filtering, matrix factorization, and clustering-based |
-| **Book recommender** | Recommend titles to e-commerce readers based on their interests | Knowledge/rank-based, similarity-based CF, matrix factorization |
-| **Amazon product recommender** | Recommend products from customers' prior ratings, at a scale where real-time response matters | Item-to-item collaborative filtering, matrix factorization |
-
-</details>
-
-<details>
-<summary><b>Deep Learning</b> — CNNs, transfer learning, spectrogram audio, ANNs</summary>
-
-| Case study | The problem | Methods |
-|---|---|---|
-| **Brain tumour MRI classifier** | Distinguish pituitary tumour from no-tumour scans across 1,000 images (830 train / 170 test) | CNN baseline, data augmentation to control overfitting, then **transfer learning** from a pre-trained architecture to lift performance |
-| **Plant seedlings** | Identify species from photographs at varying growth stages, to cut manual sorting in agriculture (Aarhus University dataset) | CNN across 12 plant species |
-| **Rice variety classification** | Separate Arborio, Basmati, Ipsala, Jasmine and Karacadag grains — a necessary grading step for agricultural export | CNN, 5-class image classification |
-| **SVHN digit recognition** | Transcribe house numbers from street-level photography (600k+ labelled digits; subset used) | Built **twice** — first a feed-forward ANN, then a CNN — so the architectures could be compared on identical data |
-| **Audio MNIST** | Classify spoken digits 0–9 by treating sound as an image | MFCC spectrograms via librosa, then an ANN over the 2-D representation |
-| **MNIST handwritten digits** | The canonical computer-vision benchmark | Baseline CNN, evaluation, then an improved CNN |
-| **Food image classification** | Auto-label stock photography into Bread, Soup and Vegetables-Fruits, where manual labelling can't keep up with upload volume | CNN, multi-class image classification |
-| **UCLA admission chances** | Predict a student's admission probability from their profile, to help shortlist universities | Neural network classification |
-| **Data-scientist job change** | Predict which trainees will seek a new job rather than join the company, and explain *why* — reducing wasted training spend | Classification over demographics, education and experience; feature interpretation |
-
-</details>
-
-<details>
-<summary><b>Networks &amp; Graphical Models</b> — centrality analysis, Kalman filtering</summary>
-
-| Case study | The problem | Methods |
-|---|---|---|
-| **CAVIAR criminal network** | Analyse a Montreal drug-trafficking network across a two-year joint Montreal Police / RCMP investigation (1994–1996) — a rare chance to watch a network *restructure* under escalating seizures rather than sit still | Phase-by-phase graph construction and visualisation, centrality measures, tracking how influence migrates between actors as the network is disrupted |
-| **3-D object tracking** | Recover the true position and velocity of a ball moving under gravity, given only noisy simulated sensor readings | Kalman filter over a 3-D state space |
-
-</details>
-
-**Methods toolkit across the program:** KNN, decision trees, bagging, random forest, linear and logistic regression, ridge & lasso, SVM, bootstrapping, cross-validation, clustering, association rules, dimensionality reduction (PCA, t-SNE), graph theory, gradient descent, activation functions and regularization — with NumPy, Pandas, Seaborn, Matplotlib, statsmodels, scikit-learn, TensorFlow and Keras.
-
----
+**Methods toolkit across the programme:** KNN, decision trees, bagging, random forest, linear and logistic regression, ridge & lasso, SVM, bootstrapping, cross-validation, clustering, association rules, dimensionality reduction (PCA, t-SNE), graph theory, gradient descent, activation functions and regularization — with NumPy, Pandas, Seaborn, Matplotlib, statsmodels, scikit-learn, TensorFlow and Keras.
 
 ## 💼 A Note for Hiring Managers & Recruiters
 
