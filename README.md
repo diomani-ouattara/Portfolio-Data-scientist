@@ -218,17 +218,62 @@ A recruiting team sources candidates by typing a role keyword — *"aspiring hum
 
 ### 📚 MIT Applied Coursework
 
-Case studies completed within the MIT Professional Education program, grouped by module:
+Case studies completed within the MIT Professional Education program (IDSS). These are **structured course assignments, not client engagements** — listed for the breadth of methods covered, not as commissioned work.
 
-**Unsupervised Learning** — genomic sequence clustering (verifying the three-letter codon structure in *Caulobacter crescentus* by unsupervised learning alone), country socio-economic clustering, US education-institute PCA, AllLife Bank credit-card customer segmentation, LDA topic modeling on faculty text, and PCA-based face identification.
+<details>
+<summary><b>Unsupervised Learning</b> — PCA, clustering, topic modeling, eigenfaces</summary>
 
-**Recommendation Systems** — Spotify music, Yelp restaurant, book, and Amazon product recommenders spanning rank/knowledge-based, similarity-based collaborative filtering, matrix factorization, and clustering-based approaches.
+| Case study | The problem | Methods |
+|---|---|---|
+| **Genomic data clustering** | Verify the twentieth-century discovery that DNA encodes information in **three-letter codons** — using a 300 kb fragment of the *Caulobacter crescentus* genome and no labels at all, so the structure has to be inferred rather than trained on | Split the sequence into non-overlapping 300-base substrings, count 1-, 2-, 3- and 4-mer frequencies, apply PCA to expose internal structure, then cluster. The codon triplet falls out of the clustering — a genuinely elegant result |
+| **Country socio-economic clustering** | Group countries by development profile beyond GDP alone, for government and NGO targeting | Clustering over child mortality, exports, health spend, imports, income, inflation, life expectancy, fertility rate and GDP per capita |
+| **US education institutes** | Reduce a wide institutional dataset — applications, enrollment, faculty education, finances, graduation rate — to its principal drivers | PCA, dimensionality reduction, insight extraction |
+| **AllLife Bank credit-card segmentation** | Find customer segments by spending pattern *and* past support interaction, to aim personalized campaigns and fix a service model customers rated poorly | Clustering on spending and interaction features |
+| **MIT EECS faculty text** | Surface latent research themes across faculty pages | Web scraping, text pre-processing, Latent Dirichlet Allocation via stochastic variational inference |
+| **Face identification** | Classify faces in photographic images | PCA / eigenfaces |
 
-**Deep Learning** — rice-variety classification (5 classes, CNN), SVHN street-view digit recognition (ANN *and* CNN), Audio MNIST spoken-digit recognition from MFCC spectrograms, brain-tumor MRI classification with data augmentation and transfer learning, plant-seedling classification (12 species), food image classification, UCLA admission-chance prediction, and data-scientist job-change prediction.
+</details>
 
-**Networks & Graphical Models** — the CAVIAR criminal-network investigation (centrality measures tracked across phases of a network under escalating police disruption) and 3-D object tracking from noisy sensor estimates with a Kalman filter.
+<details>
+<summary><b>Recommendation Systems</b> — collaborative filtering, matrix factorization, rank-based</summary>
 
-> These are structured course case studies rather than client engagements — listed for the breadth of methods covered, not as commissioned work.
+| Case study | The problem | Methods |
+|---|---|---|
+| **Spotify music recommender** | Propose the top 10 next songs for a user by likelihood of listening | Rank-based and collaborative filtering over listening history |
+| **Yelp restaurants** | Recommend local businesses from a multi-city review corpus (~11 GB in full; a subset used here) | Four systems built and compared: knowledge/rank-based, similarity-based collaborative filtering, matrix factorization, and clustering-based |
+| **Book recommender** | Recommend titles to e-commerce readers based on their interests | Knowledge/rank-based, similarity-based CF, matrix factorization |
+| **Amazon product recommender** | Recommend products from customers' prior ratings, at a scale where real-time response matters | Item-to-item collaborative filtering, matrix factorization |
+
+</details>
+
+<details>
+<summary><b>Deep Learning</b> — CNNs, transfer learning, spectrogram audio, ANNs</summary>
+
+| Case study | The problem | Methods |
+|---|---|---|
+| **Brain tumour MRI classifier** | Distinguish pituitary tumour from no-tumour scans across 1,000 images (830 train / 170 test) | CNN baseline, data augmentation to control overfitting, then **transfer learning** from a pre-trained architecture to lift performance |
+| **Plant seedlings** | Identify species from photographs at varying growth stages, to cut manual sorting in agriculture (Aarhus University dataset) | CNN across 12 plant species |
+| **Rice variety classification** | Separate Arborio, Basmati, Ipsala, Jasmine and Karacadag grains — a necessary grading step for agricultural export | CNN, 5-class image classification |
+| **SVHN digit recognition** | Transcribe house numbers from street-level photography (600k+ labelled digits; subset used) | Built **twice** — first a feed-forward ANN, then a CNN — so the architectures could be compared on identical data |
+| **Audio MNIST** | Classify spoken digits 0–9 by treating sound as an image | MFCC spectrograms via librosa, then an ANN over the 2-D representation |
+| **MNIST handwritten digits** | The canonical computer-vision benchmark | Baseline CNN, evaluation, then an improved CNN |
+| **Food image classification** | Auto-label stock photography into Bread, Soup and Vegetables-Fruits, where manual labelling can't keep up with upload volume | CNN, multi-class image classification |
+| **UCLA admission chances** | Predict a student's admission probability from their profile, to help shortlist universities | Neural network classification |
+| **Data-scientist job change** | Predict which trainees will seek a new job rather than join the company, and explain *why* — reducing wasted training spend | Classification over demographics, education and experience; feature interpretation |
+
+</details>
+
+<details>
+<summary><b>Networks &amp; Graphical Models</b> — centrality analysis, Kalman filtering</summary>
+
+| Case study | The problem | Methods |
+|---|---|---|
+| **CAVIAR criminal network** | Analyse a Montreal drug-trafficking network across a two-year joint Montreal Police / RCMP investigation (1994–1996) — a rare chance to watch a network *restructure* under escalating seizures rather than sit still | Phase-by-phase graph construction and visualisation, centrality measures, tracking how influence migrates between actors as the network is disrupted |
+| **3-D object tracking** | Recover the true position and velocity of a ball moving under gravity, given only noisy simulated sensor readings | Kalman filter over a 3-D state space |
+
+</details>
+
+**Methods toolkit across the program:** KNN, decision trees, bagging, random forest, linear and logistic regression, ridge & lasso, SVM, bootstrapping, cross-validation, clustering, association rules, dimensionality reduction (PCA, t-SNE), graph theory, gradient descent, activation functions and regularization — with NumPy, Pandas, Seaborn, Matplotlib, statsmodels, scikit-learn, TensorFlow and Keras.
 
 ---
 
