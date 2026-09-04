@@ -236,7 +236,7 @@ Case studies completed within the MIT Professional Education program, grouped by
 
 If you're evaluating my work, the three **Apziva residency notebooks** above are the best place to start — they show how I operate end-to-end on real client problems:
 
-- **I start with the business question, not the algorithm.** Both projects open with a clear target set by the client (73% and 81% accuracy) and end with recommendations a non-technical stakeholder can act on.
+- **I start with the business question, not the algorithm.** Every project opens from the client's question — two with explicit accuracy targets (73% and 81%), the third with a shortlist a recruiter had to trust — and ends with recommendations a non-technical stakeholder can act on.
 - **I evaluate honestly.** Stratified splits, 5-fold cross-validation, train-vs-test comparisons to expose overfitting, and imbalance-aware metrics (ROC-AUC, Average Precision) instead of headline accuracy alone. In the ranking project I measured feedback against a control that receives the same stars and ignores them — because the honest baseline is the drift, not zero.
 - **I audit for bias before it ships.** The ranking engine excludes network size and location from scoring on documented evidence, and proves location-invariance with a counterfactual test rather than asserting it in a disclaimer.
 - **I ship insights, not just models.** Survey questions to cut, customer segments with a 2.78× conversion uplift, contact-attempt caps, seasonal budget shifts — every project closes the loop from prediction to decision.
