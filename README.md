@@ -2,7 +2,7 @@
 
 ### Data Scientist | MIT Professional Education (IDSS) | Apziva AI Resident | Edmonton, AB 🇨🇦
 
-I'm a data scientist with experience blending **machine learning**, **predictive modeling**, **applied NLP**, and **operational analytics** with a background in IT management and international logistics. I turn complex datasets into decisions that actually move the needle.
+I'm a data scientist with experience blending **machine learning**, **predictive modeling**, **applied NLP**, **computer vision**, and **operational analytics** with a background in IT management and international logistics. I turn complex datasets into decisions that actually move the needle — and I'm now taking models to the cloud on **AWS**.
 
 ---
 
@@ -24,9 +24,18 @@ I'm a data scientist with experience blending **machine learning**, **predictive
 
 **Deep Learning & NLP**
 
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
 ![Keras](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white)
 ![Sentence-Transformers](https://img.shields.io/badge/Sentence--Transformers-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
+
+**Cloud & Data Engineering**
+
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white)
+![Amazon S3](https://img.shields.io/badge/Amazon%20S3-569A31?style=for-the-badge&logo=amazons3&logoColor=white)
+![Athena](https://img.shields.io/badge/Athena-8C4FFF?style=for-the-badge&logo=amazonwebservices&logoColor=white)
+![SageMaker](https://img.shields.io/badge/SageMaker-01A88D?style=for-the-badge&logo=amazonwebservices&logoColor=white)
+![AWS Lambda](https://img.shields.io/badge/AWS%20Lambda-FF9900?style=for-the-badge&logo=awslambda&logoColor=white)
 
 **Visualization**
 
@@ -38,11 +47,11 @@ I'm a data scientist with experience blending **machine learning**, **predictive
 
 ## ⭐ Apziva AI Residency Projects
 
-Three end-to-end machine learning projects completed during my AI Residency at **[Apziva](https://www.apziva.com/)**, each solving a real business problem for a client — from raw data to model selection, evaluation, and actionable business recommendations.
+Four end-to-end machine learning projects completed during my AI Residency at **[Apziva](https://www.apziva.com/)**, each solving a real business problem for a client — from raw data to model selection, evaluation, and actionable business recommendations. They span tabular classification, NLP ranking, and on-device computer vision.
 
 ### 1️⃣ Customer Happiness Prediction — Logistics & Delivery
 
-**📓 Notebook:** [`0hhwPRi6B4fBj84R.ipynb`](https://github.com/diomani-ouattara/Portfolio-Data-scientist/blob/main/0hhwPRi6B4fBj84R.ipynb) &nbsp;|&nbsp; [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/diomani-ouattara/Portfolio-Data-scientist/blob/main/0hhwPRi6B4fBj84R.ipynb)
+**📓 Notebook:** [`1-Predicting Customer Happiness.ipynb`](https://github.com/diomani-ouattara/Portfolio-Data-scientist/blob/main/1-Predicting%20Customer%20Happiness.ipynb) &nbsp;|&nbsp; [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/diomani-ouattara/Portfolio-Data-scientist/blob/main/1-Predicting%20Customer%20Happiness.ipynb)
 
 **The Business Problem**
 
@@ -70,7 +79,7 @@ A fast-growing logistics and delivery startup wanted to know **which customers a
 
 ### 2️⃣ Term Deposit Subscription Prediction — European Banking
 
-**📓 Notebook:** [`c4f8JGcuEvcMtTJI.ipynb`](https://github.com/diomani-ouattara/Portfolio-Data-scientist/blob/main/c4f8JGcuEvcMtTJI.ipynb) &nbsp;|&nbsp; [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/diomani-ouattara/Portfolio-Data-scientist/blob/main/c4f8JGcuEvcMtTJI.ipynb)
+**📓 Notebook:** [`2-Term Deposit Subscription Prediction.ipynb`](https://github.com/diomani-ouattara/Portfolio-Data-scientist/blob/main/2-Term%20Deposit%20Subscription%20Prediction.ipynb) &nbsp;|&nbsp; [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/diomani-ouattara/Portfolio-Data-scientist/blob/main/2-Term%20Deposit%20Subscription%20Prediction.ipynb)
 
 **The Business Problem**
 
@@ -91,7 +100,8 @@ A European bank runs large phone-based marketing campaigns to sell term deposits
 
 **Key Results & Impact**
 
-- ✅ **93.6% cross-validated accuracy** with Gradient Boosting (ROC-AUC 0.949) — **beating the 81% target by more than 12 points**; all five models cleared the bar
+- ✅ **ROC-AUC 0.949** with Gradient Boosting under 5-fold stratified CV — client's 81% accuracy target exceeded, all five models cleared the bar. Accuracy alone is not the headline here: predicting "no" for everyone already scores ~93%
+- 🎯 **Average Precision 0.539 vs. a 0.072 random baseline** — at the chosen threshold the model reaches **64% precision at 41% recall, an 8.9× lift** over the 7.2% base rate. That lift is what makes a call list better than random dialing
 - 🎯 Identified a **high-value customer segment converting at 20.1% vs. a 7.2% baseline — a 2.78× uplift** (students/retirees, under-25 and 55+ age bands, engaged calls)
 - 📅 Seasonality insight: March, September, October, and December convert best, while May gets the most calls with below-average results — a clear budget-reallocation opportunity
 - 📵 Found that more than 3 contact attempts *hurts* conversion — recommended a hard cap of 3 calls per customer per campaign
@@ -101,7 +111,7 @@ A European bank runs large phone-based marketing campaigns to sell term deposits
 
 ### 3️⃣ Potential Talents — Candidate Ranking & Relevance-Feedback Search
 
-**📓 Notebook:** [`Potential_Talents_Ranking.ipynb`](https://github.com/diomani-ouattara/Portfolio-Data-scientist/blob/main/Potential_Talents_Ranking.ipynb) &nbsp;|&nbsp; [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/diomani-ouattara/Portfolio-Data-scientist/blob/main/Potential_Talents_Ranking.ipynb)
+**📓 Notebook:** [`3-Potential Talents Ranking.ipynb`](https://github.com/diomani-ouattara/Portfolio-Data-scientist/blob/main/3-Potential%20Talents%20Ranking.ipynb) &nbsp;|&nbsp; [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/diomani-ouattara/Portfolio-Data-scientist/blob/main/3-Potential%20Talents%20Ranking.ipynb)
 
 **The Business Problem**
 
@@ -132,6 +142,68 @@ A recruiting team sources candidates by typing a role keyword — *"aspiring hum
 - 🔁 Shipped as a production wrapper (`search` / `star` / `reject` / `results`) with three-band output — **shortlist / review / reject** — so uncertainty is surfaced to the recruiter instead of hidden behind one arbitrary line
 
 `Python` `Sentence-Transformers (SBERT)` `Scikit-learn` `TF-IDF` `Logistic Regression` `Gaussian Mixture Models` `NDCG / MAP` `Bias Auditing`
+
+---
+
+### 4️⃣ MonReader — Page-Flip Detection for a Mobile Document Scanner
+
+**📓 Notebook:** [`4-MonReader_Page_Flip_Detection.ipynb`](https://github.com/diomani-ouattara/Portfolio-Data-scientist/blob/main/4-MonReader_Page_Flip_Detection.ipynb) &nbsp;|&nbsp; [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/diomani-ouattara/Portfolio-Data-scientist/blob/main/4-MonReader_Page_Flip_Detection.ipynb)
+
+**The Business Problem**
+
+MonReader is a phone app that scans books automatically while the user flips the pages. To capture each page in high resolution at the right moment, the app has to know **whether a page is being flipped from a single camera frame**. The data: **2,989 phone frames** (1080×1920) cut from **65 videos**, labelled *flip* / *not flip*. Metric: **F1**, with *flip* as the positive class. Bonus challenge: decide whether a whole **sequence** of frames contains a flip.
+
+**Project Flow**
+
+| Step | What I Did | Why It Matters |
+|---|---|---|
+| 1. EDA | Parsed `VideoID_FrameNumber` from every filename; checked class balance (~49% flip) and looked at what a flip actually looks like | Visual cues are a lifted corner, a curved page and motion blur on the moving page — so **blur augmentation was ruled out**, because blur is the signal |
+| 2. Leakage Check | Compared video IDs and frame numbers across the official train and test folders | **All 65 test videos also appear in training**, often with test frame 20 sitting between training frames 19 and 21. The official test score will be optimistic |
+| 3. Honest Validation | Held out **whole videos** (20%) as a validation set — no frame of a validation video is ever trained on | This is the realistic setting: a new book, a new hand, a new phone. Model and threshold selection use this split only |
+| 4. Classical Baseline | PCA + logistic regression on 64×36 thumbnails, plus a sharpness-only (Laplacian variance) model | The pixel baseline scores **0.958 F1 on the official test but 0.822 on unseen videos** — direct proof that it memorises videos. Global sharpness alone is weak (0.23) |
+| 5. Transfer Learning | Fine-tuned two **mobile-sized** ImageNet CNNs — MobileNetV3-Large and EfficientNet-B0 (~5M parameters each) — with AdamW, cosine schedule, mixed precision | The app runs on a phone, so the model must be small *and* understand the **shape** of a turning page, not global brightness |
+| 6. Threshold Tuning | Picked the F1-maximising threshold on validation, applied it **unchanged** to test | Tuning on test would leak again |
+| 7. Explainability | Error review of the misclassified frames + **Grad-CAM** heat maps | Confirms the model looks at the lifted page and the hand, not the background |
+| 8. Sequence Detection | Aggregated frame probabilities over each clip with three rules — mean, max, and a **3-frame moving average** | The moving-average rule behaves like a real-time trigger: it ignores one-frame spikes and fires when a flip persists |
+| 9. Mobile Export | Exported to **TorchScript** and measured single-frame CPU latency | Deployment-ready artefact, loadable by PyTorch Mobile / ExecuTorch or convertible to TFLite / Core ML |
+
+**Key Results & Impact**
+
+| Model | F1 — unseen videos (honest) | F1 — official test |
+|---|---|---|
+| PCA + logistic regression (baseline) | 0.822 | 0.958 |
+| MobileNetV3-Large | 0.974 | 0.990 |
+| **EfficientNet-B0 (selected)** | **0.994** | **0.997** |
+| Sequence level, 3-frame window rule | 1.000 (21 clips) | **1.000 (115 clips)** |
+
+- ✅ **F1 0.994 on videos the model has never seen** — the number I'd quote for a new user — and 0.997 on the official test set: **2 errors out of 597 frames**, recall 1.00 on flips
+- 🔍 **Found and quantified test-set leakage** that the brief didn't mention, then built the evaluation around it instead of reporting the flattering number alone
+- 🎞️ **Sequence-level challenge solved** with a 3-frame moving-average trigger — perfect F1 on all 115 test clips
+- 📱 **17 MB TorchScript model, ~44 ms per frame (~23 FPS) on CPU** — fast enough to run live on a phone
+
+`Python` `PyTorch` `torchvision` `EfficientNet` `MobileNetV3` `Transfer Learning` `Grad-CAM` `TorchScript` `Scikit-learn`
+
+---
+
+## ☁️ Cloud — AWS in 30 Days
+
+**📂 Repo:** [`aws-30-days`](https://github.com/diomani-ouattara/aws-30-days) &nbsp;·&nbsp; *self-directed, in progress (Week 3 of 4)*
+
+A data-science-focused build on AWS (`ca-central-1`), one dataset end to end: **9.5M NYC yellow-taxi trips** (Jan–Mar 2024) going **S3 → Glue / Athena → SageMaker → deployment**. Every day is committed with the numbers it produced.
+
+| Area | What I Built | Result |
+|---|---|---|
+| Identity & guardrails | Root locked with MFA, IAM group + hand-written least-privilege policies, instance and execution **roles instead of copied keys** | Analyst user can read `raw/` and nothing else; the SageMaker role can't write `raw/` — tested, not assumed |
+| Storage layout | Versioned S3 bucket laid out `raw/ → processed/ → features/ → models/ → outputs/`, lifecycle rule on outputs | The layout used by real data teams |
+| CSV vs Parquet | Same 2.96M rows read from S3 in pandas | Parquet **5.2× smaller and 9× faster** to read, and keeps the schema |
+| SQL over the lake | Glue Data Catalog (crawler vs. hand-written DDL), Athena CTAS, `year/month` partitioning | The same query scans **314 MB as CSV → 4.7 MB as partitioned Parquet** — Athena bills per byte scanned |
+| Leakage-safe features in SQL | Date-based split (train Jan–Feb, validate Mar), target encoding on training months only, `total_amount` excluded because it contains the tip | 7.18M credit-card trips in a versioned `features/v1/` table |
+| Event-driven Lambda | S3-triggered function logs each new file's rows and columns by reading **only the Parquet footer** | A 50 MB upload costs one 64 KB range request instead of a full download |
+| SageMaker | Model trained in a notebook instance, then as managed training jobs (built-in XGBoost and script mode) | Tip model **MAE $1.24** vs. $1.33 for a one-line rule and $2.45 for the mean (R² 0.65) |
+
+The honest read from Day 16: a one-line rule (zone tip rate × fare) already gets most of the way, because tipping is mostly a percentage of the fare. The model's gain is real but modest — and it's written down that way.
+
+`AWS` `S3` `IAM` `EC2` `Glue` `Athena` `Lambda` `SageMaker` `CloudWatch` `boto3` `SQL` `Parquet`
 
 ---
 
@@ -190,6 +262,18 @@ A recruiting team sources candidates by typing a role keyword — *"aspiring hum
 `Python` `Financial Analysis` `Statistical Modeling`
 
 ---
+
+### Software & Automation Builds
+
+#### 🏘️ Rentora — Property Management Platform
+> Full-stack SaaS MVP for the Alberta rental market: a Next.js web portal, an Expo iOS/Android app, and a shared Supabase (PostgreSQL) backend with **row-level security** so landlords, property managers, tenants and vendors each see only their own data. Properties, units, leases, rent and maintenance modelled in a relational schema.
+
+`Next.js` `TypeScript` `Expo` `Supabase` `PostgreSQL` `Row-Level Security`
+
+#### 🔎 Multi-Source Lead Generation Pipeline
+> An AI agent directs deterministic Python tools to collect, clean, de-duplicate and enrich **~150 B2B leads** for an Edmonton contractor from OpenStreetMap, City of Edmonton open data (Socrata API) and HTML directories. Honours `robots.txt`, runs its tests offline against saved fixtures, and logs every selector fix as a regression test.
+
+`Python` `Requests` `BeautifulSoup` `Playwright` `REST APIs` `pytest` `SQLite`
 
 ---
 
@@ -321,7 +405,8 @@ A recruiting team sources candidates by typing a role keyword — *"aspiring hum
 - Predictive Modeling & Statistical Analysis
 - Feature Engineering & Data Wrangling
 - Imbalanced Classification & Model Evaluation (ROC-AUC, Precision-Recall, Average Precision)
-- **Computer Vision** — image classification, CNNs, data augmentation, transfer learning
+- **Computer Vision** — image classification, CNNs, data augmentation, transfer learning (EfficientNet, MobileNetV3), Grad-CAM, TorchScript export for mobile
+- **Cloud & Data Engineering (AWS)** — S3 data lakes, IAM least privilege, Glue Data Catalog, Athena SQL, partitioned Parquet, Lambda, SageMaker training
 - **Audio & Signal Processing** — MFCC spectrograms, treating sound as image data
 - **NLP & Information Retrieval** — sentence embeddings, hybrid retrieval, relevance feedback, LDA topic modeling, web scraping
 - **Recommendation Systems** — collaborative filtering, matrix factorization, content-, rank- and clustering-based
@@ -333,14 +418,14 @@ A recruiting team sources candidates by typing a role keyword — *"aspiring hum
 - Ranking Evaluation — NDCG, MAP, Recall@K
 - Responsible AI — bias auditing, disparate impact analysis, counterfactual testing
 - Time Series Analysis & A/B Testing
-- Cross-Validation, Bootstrapping, Customer Segmentation
+- Cross-Validation (stratified and grouped), Data-Leakage Detection, Bootstrapping, Customer Segmentation
 - Supply Chain & Logistics Optimization
 
 ## 🎓 Education & Certifications
 
 | Credential | Institution | Year |
 |---|---|---|
-| AI Residency Program | Apziva | 2026 |
+| AI Residency Program | Apziva | 2026 – present |
 | Data Science & Machine Learning: Making Data-Driven Decisions | MIT Institute for Data, Systems and Society | 2023 |
 | Supply Chain Logistics, Operations and Planning | Rutgers University | 2020 |
 | Bachelor's in Network Administration | Institute of Technology, Abidjan | 2010 |
@@ -353,12 +438,13 @@ The MIT Professional Education programme ran as **21 applied case studies** acro
 
 ## 💼 A Note for Hiring Managers & Recruiters
 
-If you're evaluating my work, the three **Apziva residency notebooks** above are the best place to start — they show how I operate end-to-end on real client problems:
+If you're evaluating my work, the four **Apziva residency notebooks** above are the best place to start — they show how I operate end-to-end on real client problems:
 
-- **I start with the business question, not the algorithm.** Every project opens from the client's question — two with explicit accuracy targets (73% and 81%), the third with a shortlist a recruiter had to trust — and ends with recommendations a non-technical stakeholder can act on.
-- **I evaluate honestly.** Stratified splits, 5-fold cross-validation, train-vs-test comparisons to expose overfitting, and imbalance-aware metrics (ROC-AUC, Average Precision) instead of headline accuracy alone. In the ranking project I measured feedback against a control that receives the same stars and ignores them — because the honest baseline is the drift, not zero.
+- **I start with the business question, not the algorithm.** Every project opens from the client's question — two with explicit accuracy targets (73% and 81%), one with a shortlist a recruiter had to trust, one with a camera trigger that has to run on a phone — and ends with recommendations a non-technical stakeholder can act on.
+- **I evaluate honestly.** Stratified splits, 5-fold cross-validation, train-vs-test comparisons to expose overfitting, and imbalance-aware metrics (ROC-AUC, Average Precision) instead of headline accuracy alone. In the ranking project I measured feedback against a control that receives the same stars and ignores them — because the honest baseline is the drift, not zero. In MonReader I found that the client's test set shared videos with training, and selected the model on unseen videos instead.
 - **I audit for bias before it ships.** The ranking engine excludes network size and location from scoring on documented evidence, and proves location-invariance with a counterfactual test rather than asserting it in a disclaimer.
-- **I ship insights, not just models.** Survey questions to cut, customer segments with a 2.78× conversion uplift, contact-attempt caps, seasonal budget shifts — every project closes the loop from prediction to decision.
+- **I ship insights, not just models.** Survey questions to cut, customer segments with a 2.78× conversion uplift, contact-attempt caps, seasonal budget shifts, a 17 MB model that runs at ~23 FPS on CPU — every project closes the loop from prediction to decision.
+- **I'm learning the production side.** My [AWS in 30 Days](https://github.com/diomani-ouattara/aws-30-days) repo takes one dataset from S3 through Athena to SageMaker, with every day's cost and result written down.
 
 I'm currently open to **data scientist / ML roles** — remote or based in Edmonton, AB. Let's talk.
 
@@ -369,7 +455,7 @@ I'm currently open to **data scientist / ML roles** — remote or based in Edmon
 - 🇨🇦 Based in **Edmonton, AB**
 - 🗣️ Fluent in **English** and **French (Native)**
 - 🤝 Volunteer at **Hope Mission, Edmonton** — food distribution & inventory for 50+ community members weekly
-- 💼 12 years in IT management and international logistics (oil & gas, West Africa)
+- 💼 12 years in IT management and international logistics (oil & gas, West Africa), now a power engineer in Edmonton
 
 ---
 
