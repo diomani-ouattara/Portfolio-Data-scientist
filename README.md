@@ -187,9 +187,9 @@ MonReader is a phone app that scans books automatically while the user flips the
 
 ## ☁️ Cloud — AWS in 30 Days
 
-**📂 Repo:** [`aws-30-days`](https://github.com/diomani-ouattara/aws-30-days) &nbsp;·&nbsp; *self-directed, in progress (Week 3 of 4)*
+**📂 Repo:** [`aws-30-days`](https://github.com/diomani-ouattara/aws-30-days) &nbsp;·&nbsp; *self-directed, 30 days, complete*
 
-A data-science-focused build on AWS (`ca-central-1`), one dataset end to end: **9.5M NYC yellow-taxi trips** (Jan–Mar 2024) going **S3 → Glue / Athena → SageMaker → deployment**. Every day is committed with the numbers it produced.
+A data-science-focused build on AWS (`ca-central-1`), one dataset end to end: **9.5M NYC yellow-taxi trips** (Jan–Mar 2024) going **S3 → Glue / Athena → SageMaker → deployment**, with the cost, security and teardown work around it. Every day is committed with the numbers it produced. **Billed: $0.00.**
 
 | Area | What I Built | Result |
 |---|---|---|
@@ -199,11 +199,15 @@ A data-science-focused build on AWS (`ca-central-1`), one dataset end to end: **
 | SQL over the lake | Glue Data Catalog (crawler vs. hand-written DDL), Athena CTAS, `year/month` partitioning | The same query scans **314 MB as CSV → 4.7 MB as partitioned Parquet** — Athena bills per byte scanned |
 | Leakage-safe features in SQL | Date-based split (train Jan–Feb, validate Mar), target encoding on training months only, `total_amount` excluded because it contains the tip | 7.18M credit-card trips in a versioned `features/v1/` table |
 | Event-driven Lambda | S3-triggered function logs each new file's rows and columns by reading **only the Parquet footer** | A 50 MB upload costs one 64 KB range request instead of a full download |
-| SageMaker | Model trained in a notebook instance, then as managed training jobs (built-in XGBoost and script mode) | Tip model **MAE $1.24** vs. $1.33 for a one-line rule and $2.45 for the mean (R² 0.65) |
+| SageMaker | Model trained in a notebook instance, then as managed training jobs (built-in XGBoost and script mode), four tuning runs compared | Tip model **MAE $1.24** vs. $1.33 for a one-line rule and $2.45 for the mean (R² 0.65) — and tuning moved it by under one cent |
+| Containers | Own training image (Docker → ECR); one `train.py` runs unchanged on a laptop, in AWS's container and in my image | Same MAE in every environment; a SageMaker-only permissions failure found and fixed |
+| Three ways to serve | Batch Transform, real-time + serverless endpoints, a Lambda container behind a Function URL | 2.57M trips scored in 2.5 min for ~$0.01; Lambda 3.6 ms warm vs ~11.7 s cold start |
+| Pipeline with a gate | SageMaker Pipeline: prepare → train → evaluate → **promote only if test MAE clears a bar** | Honest score on held-out trips: **$1.2567**; a run with a stricter bar correctly refuses to promote |
+| Ops & cost | Secrets Manager, Parameter Store, CloudWatch alarm → email (tested by breaking it), CloudTrail audit, tagging, scripted teardown | Same results for **~$2/month instead of ~$87** — no idle notebook, batch instead of an always-on endpoint |
 
-The honest read from Day 16: a one-line rule (zone tip rate × fare) already gets most of the way, because tipping is mostly a percentage of the fare. The model's gain is real but modest — and it's written down that way.
+The honest read: a one-line rule (zone tip rate × fare) already gets most of the way, because tipping is mostly a percentage of the fare. Different algorithms, more data and tuning all hit the same ceiling — the limit is the features, not the model — and it's written down that way.
 
-`AWS` `S3` `IAM` `EC2` `Glue` `Athena` `Lambda` `SageMaker` `CloudWatch` `boto3` `SQL` `Parquet`
+`AWS` `S3` `IAM` `EC2` `Glue` `Athena` `Lambda` `SageMaker` `SageMaker Pipelines` `ECR` `Docker` `CloudWatch` `SNS` `Secrets Manager` `CloudTrail` `boto3` `MLflow` `SQL` `Parquet`
 
 ---
 
